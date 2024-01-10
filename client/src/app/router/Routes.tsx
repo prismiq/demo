@@ -5,6 +5,7 @@ import AboutPage from "../../features/about/AboutPage";
 import App from "../layout/App";
 import ProductDetails from "../../features/catalog/ProductDetails";
 import ServerError from "../errors/ServerError";
+import BaksetPage from "../../features/basket/basketPage";
 
 export const router = createBrowserRouter([
     {
@@ -15,7 +16,8 @@ export const router = createBrowserRouter([
             {path: 'catalog/', element: <Catalog/>},
             {path: 'catalog/:id', element: <ProductDetails/>},
             {path: 'about', element: <AboutPage/>},
-            {path: 'server-error', element: <ServerError/>}
+            {path: 'server-error', element: <ServerError/>},
+            {path: 'basket', element: <BaksetPage/>}
         ]
     }
 ])

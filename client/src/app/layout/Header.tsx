@@ -32,7 +32,7 @@ export default function Header({darkMode, handleThemeChange}: Prop) {
                     {title.toUpperCase()}
                 </ListItem>
             ))}</List>
-            <IconButton size='large' edge='start' colour='inherit' sx={{mr:2}}>
+            <IconButton to='/basket' size='large' edge='start' colour='inherit' sx={{mr:2}}>
                 <Badge badgeContent='4' color='secondary'>
                     <ShoppingCart/>
                 </Badge>
